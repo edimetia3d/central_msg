@@ -1,0 +1,9 @@
+#ifndef MSG
+static_assert(false, "this file is designed to be included only, and MSG must be defined");
+#endif
+// MSG(ID,LEVEL,TEXT)
+MSG(HELLO, 0, "Say hello")
+MSG(GOODBYE, 0, "Say goodbye")
+MSG(HELLO_WORLD, 0, "Hello, world!")
+MSG(CRASH, 1, "Crash")
+#undef MSG
